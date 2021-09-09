@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import shikenHook from "../Hook";
+import Hook from "../Hook";
 
 function Component() {
     const list = ["Huyen", "Hoa", "Hung", "Long"];
     const [input, setInput] = useState("");
-    const [index, search] = shikenHook(list);
+    const [index, search] = Hook(list);
 
     const clickSearch = () => {
         search(input);
